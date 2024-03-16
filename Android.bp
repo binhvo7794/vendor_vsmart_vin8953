@@ -441,13 +441,6 @@ dex_import {
 }
 
 dex_import {
-	name: "com.nxp.nfc.nq",
-	owner: "fairphone",
-	jars: ["proprietary/system_ext/framework/com.nxp.nfc.nq.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
 	name: "com.qti.dpmframework",
 	owner: "fairphone",
 	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
@@ -885,15 +878,6 @@ prebuilt_etc_xml {
 	name: "manifest_android.hardware.drm@1.3-service.widevine",
 	owner: "fairphone",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.nxp.hardware.nfc@2.0-service",
-	owner: "fairphone",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.nxp.hardware.nfc@2.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
